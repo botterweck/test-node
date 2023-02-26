@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t botterweck/node .
+  - docker images botterweck/node
